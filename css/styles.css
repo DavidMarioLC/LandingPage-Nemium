@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: rgb(15, 15, 53);
+
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.header__title {
+    color: #FFF;
+    font-family: 'Londrina Outline', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.projects__content {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    overflow: hidden;
+
+
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 320px;
+    min-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 0.5px solid rgba(8, 8, 29, 0.603);
+    top: 0;
+    transition: all 0.2s linear;
+
+}
+
+.card__link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+
+}
+
+.card__picture {
+    display: block;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card__title {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+/* hover */
+.card:hover {
+    top: -20px;
+}

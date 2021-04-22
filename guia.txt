@@ -1,0 +1,62 @@
+Default config
+
+1. direction:ltr
+2. writing-mode: horizontal-tb
+3. text-orientation: mixed
+----------------------------------------
+MARGENES
+
+1. margin-inline = margin: 0 100px
+ojo:
+pero si se cambia el writing-mode esto se invertira.
+
+2. margin-block = margin: 100px 0:
+- margin-block-start/end:50px = margin-top:50px;
+
+----------------------------------------
+
+ANCHO Y ALTO
+
+inline-size = width
+block-size = height
+
+----------------------------------------
+
+MAXIMO ANCHO Y MAXIMO ALTO
+
+max-inline-size = max-width
+max-block-size  = height
+
+
+----------------------------------------
+
+PADDING
+
+padding-inline = left and right
+padding-inline-start = solo left
+padding-inline-end = solo right
+
+padding-block = top and bottom
+padding-block-start = solo top
+padding-block-end = solo bottom
+
+-------------------------------
+
+BORDERS
+
+border-inline-start= left
+border-inline-end= right
+border-inline =2px solid red solo left and right
+border-block= 2px solid red solo top and bottom
+
+border-block-start-color : agregar color para un borde especify
+
+--------------------------
+
+POSITIONS
+
+inset-block-start: 10px ->  arriba
+inset-block-end:  -> abajo
+
+inset-inline-start: -> izquierda
+inset-inline-end: -> derecha
