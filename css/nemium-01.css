@@ -16,8 +16,8 @@ html {
 
 body {
     font-family: var(--font-family);
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
+
 
 
 }
@@ -28,7 +28,7 @@ img {
 
 /* menu */
 .header {
-    margin-block-start: 4rem;
+    margin-top: 4rem;
 
 }
 
@@ -36,6 +36,33 @@ img {
     color: var(--softgray);
 }
 
+
+/* variantes */
+.menu-variantes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 104px;
+}
+
+.menu-variantes__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(0, 0, 0, 0.096);
+    vertical-align: middle;
+}
+
+.menu-variantes__item {
+    margin-bottom: 1rem;
+}
+
+.menu-variantes__link {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+/* menu */
 .menu {
     color: var(--softgray);
 
@@ -49,7 +76,7 @@ img {
 }
 
 .menu__item {
-    margin-block-end: 1rem;
+    margin-bottom: 1rem;
 }
 
 .menu__link {
@@ -59,15 +86,15 @@ img {
 
 /* wrapper */
 .wrapper {
-    max-inline-size: 902px;
-    margin-inline: auto;
-    padding-inline: 1rem;
+    max-width: 902px;
+    margin: auto;
+    padding: 0 1rem;
 }
 
 /* hero */
 .hero {
-    inline-size: 100%;
-    block-size: 350px;
+    width: 100%;
+    height: 350px;
     background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../image/patron-1.png');
 
 }
@@ -81,7 +108,7 @@ img {
 
 
 .main-title {
-    margin-block-start: 4rem;
+    margin-top: 4rem;
     font-size: 2rem;
     line-height: 4.3rem;
     color: var(--dark);
@@ -110,18 +137,18 @@ img {
 
 .underline::after {
     content: "";
-    inline-size: 4rem;
-    block-size: 4px;
+    width: 4rem;
+    height: 4px;
     display: block;
     background-color: var(--gray);
-    margin-block-start: 4px;
+    margin-top: 4px;
 }
 
 
 .picture {
     background-color: var(--black);
-    inline-size: 80px;
-    block-size: 80px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -135,12 +162,11 @@ img {
 
 
 .quote {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    margin-block-start: 2rem;
-    margin-block-end: 4rem;
-    border-inline-start: 4px solid;
-    padding-inline-start: 16px;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-left: 4px solid;
+    padding-left: 16px;
 }
 
 .quote__title {
@@ -156,8 +182,8 @@ img {
 .code {
     background-color: var(--yellow);
     font-family: var(--font-family);
-    padding-block: 2.5rem;
-    padding-inline: 2.5rem;
+    padding: 2.5rem 0;
+    padding: 0 2.5rem;
 }
 
 .list-numeric {
@@ -183,8 +209,8 @@ img {
 
 .dots__item {
     display: inline-block;
-    inline-size: 16px;
-    block-size: 16px;
+    width: 16px;
+    height: 16px;
     background-color: var(--softgray);
     border-radius: 50%;
 }
@@ -195,8 +221,8 @@ img {
 
 /* newsletter */
 .newsletter__content {
-    margin-block-start: 1rem;
-    margin-block-end: 113px;
+    margin-top: 1rem;
+    margin-bottom: 113px;
 
 }
 
@@ -208,43 +234,40 @@ img {
 .input-item {
     border: none;
     font-family: var(--font-family);
-    border-inline: 1px solid var(--softgray);
-    border-block: 1px solid var(--softgray);
+    border: 1px solid var(--softgray);
     width: 100%;
     font-size: 1rem;
     border-radius: 90px;
-    padding-inline: 1rem;
-    padding-block: 0.75rem;
+    padding: 0.75rem 1rem;
     line-height: 1.5rem;
     outline: none;
     box-sizing: border-box;
 }
 
 .input-item-text {
-    inline-size: 100%;
-    margin-block-end: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .input-item-email {
-    inline-size: 100%;
+    width: 100%;
     position: relative;
 }
 
 .input-button {
     position: absolute;
-    inset-inline-end: 0px;
-    inset-block-start: 0px;
-    inset-block-end: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
     border: 0;
     font-family: var(--font-family);
     background: var(--black);
     color: var(--white);
-    padding-inline: 1rem;
-    padding-block: 0.75rem;
+    padding: 0.75rem 1rem;
     border-radius: 90px;
     font-weight: 500;
     line-height: 1.5rem;
-    inline-size: 119px;
+    width: 119px;
 
 }
 
@@ -256,7 +279,7 @@ img {
 }
 
 .footer__content {
-    padding-block: 48px;
+    padding: 48px 0;
 }
 
 .footer-text,
@@ -290,12 +313,12 @@ img {
 
 
     .input-item-text {
-        inline-size: 280px;
-        margin-inline-end: 1rem;
+        width: 280px;
+        margin-right: 1rem;
     }
 
     .input-item-email {
-        inline-size: 337px;
+        width: 337px;
         position: relative;
     }
 

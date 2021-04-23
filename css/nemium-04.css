@@ -16,13 +16,13 @@ html {
 
 body {
     font-family: var(--font-family);
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
+
 
 }
 
 img {
-    max-inline-size: 100%;
+    max-width: 100%;
 }
 
 /* menu */
@@ -33,8 +33,8 @@ img {
 }
 
 .header__content {
-    padding-block-start: 4rem;
-    padding-block-end: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
 
 }
 
@@ -42,6 +42,32 @@ img {
     color: var(--softgray);
 }
 
+/* variantes */
+.menu-variantes {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 104px;
+}
+
+.menu-variantes__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(0, 0, 0, 0.096);
+    vertical-align: middle;
+}
+
+.menu-variantes__item {
+    margin-bottom: 1rem;
+}
+
+.menu-variantes__link {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+/* menu */
 .menu {
     color: var(--softgray);
 
@@ -49,7 +75,7 @@ img {
 
 .navigation {
 
-    padding-inline-start: 1rem;
+    padding-left: 1rem;
 }
 
 .menu__title {
@@ -60,7 +86,7 @@ img {
 }
 
 .menu__item {
-    margin-block-end: 1rem;
+    margin-bottom: 1rem;
 }
 
 .menu__link {
@@ -70,15 +96,15 @@ img {
 
 /* wrapper */
 .wrapper {
-    max-inline-size: 906px;
-    margin-inline: auto;
-    padding-inline: 1rem;
+    max-width: 906px;
+    margin: auto;
+    padding: 0 1rem;
 }
 
 /* hero */
 .hero {
-    inline-size: 100%;
-    block-size: 350px;
+    width: 100%;
+    height: 350px;
     background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../image/patron-2.svg');
 
 }
@@ -187,11 +213,9 @@ img {
 
 
 .quote {
-    margin-block-start: 4rem;
-    margin-block-end: 4rem;
-
-    border-inline-start: 4px solid #5551FF;
-    padding-inline-start: 16px;
+    margin: 4rem 0;
+    border-left: 4px solid #5551FF;
+    padding-left: 16px;
 }
 
 .quote__title {
@@ -211,8 +235,7 @@ img {
     color: var(--black);
     background-color: #ffffff;
     font-family: var(--font-family);
-    padding-block: 2.5rem;
-    padding-inline: 2.5rem;
+    padding: 2.5rem;
     text-align: left;
     border: 8px solid #5551FF;
     box-shadow: -8px 8px 0px 0px #5451ff65;
@@ -254,8 +277,8 @@ img {
 
 .dots__item {
     display: inline-block;
-    inline-size: 16px;
-    block-size: 16px;
+    width: 16px;
+    height: 16px;
     background-color: #5551FF;
     border-radius: 50%;
 }
@@ -271,8 +294,8 @@ img {
 
 /* newsletter */
 .newsletter__content {
-    margin-block-start: 1rem;
-    margin-block-end: 113px;
+    margin-top: 1rem;
+    margin-bottom: 113px;
 
 }
 
@@ -284,43 +307,40 @@ img {
 .input-item {
     border: none;
     font-family: var(--font-family);
-    border-inline: 1px solid var(--softgray);
-    border-block: 1px solid var(--softgray);
+    border: 1px solid var(--softgray);
     width: 100%;
     font-size: 1rem;
     border-radius: 90px;
-    padding-inline: 1rem;
-    padding-block: 0.75rem;
+    padding: 0.75rem 1rem;
     line-height: 1.5rem;
     outline: none;
     box-sizing: border-box;
 }
 
 .input-item-text {
-    inline-size: 100%;
-    margin-block-end: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .input-item-email {
-    inline-size: 100%;
+    width: 100%;
     position: relative;
 }
 
 .input-button {
     position: absolute;
-    inset-inline-end: 0px;
-    inset-block-start: 0px;
-    inset-block-end: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
     border: 0;
     font-family: var(--font-family);
     background: #5551FF;
     color: var(--white);
-    padding-inline: 1rem;
-    padding-block: 0.75rem;
+    padding: 0.75rem 1rem;
     border-radius: 90px;
     font-weight: 500;
     line-height: 1.5rem;
-    inline-size: 119px;
+    width: 119px;
 
 }
 
@@ -332,7 +352,7 @@ img {
 }
 
 .footer__content {
-    padding-block: 48px;
+    padding: 48px 0;
 }
 
 .footer-text,
@@ -366,11 +386,11 @@ img {
 
     .input-item-text {
         inline-size: 280px;
-        margin-inline-end: 1rem;
+        margin-left: 1rem;
     }
 
     .input-item-email {
-        inline-size: 337px;
+        width: 337px;
         position: relative;
     }
 }
